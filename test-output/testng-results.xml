@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="43559" started-at="2017-05-22T02:22:23Z" finished-at="2017-05-22T02:23:07Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="43559" started-at="2017-05-22T02:22:23Z" finished-at="2017-05-22T02:23:07Z">
+      <class name="com.zoho.framework.testcases.LoginTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:com.zoho.framework.testcases.LoginTest@3bfdc050]" name="before" is-config="true" duration-ms="272" started-at="2017-05-22T07:52:23Z" finished-at="2017-05-22T07:52:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="FAIL" signature="doLogin()[pri:0, instance:com.zoho.framework.testcases.LoginTest@3bfdc050]" name="doLogin" duration-ms="42672" started-at="2017-05-22T07:52:23Z" finished-at="2017-05-22T07:53:06Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Exception while extracting object loginLink- Message -> Unable to locate element: {"method":"xpath","selector":"//a[@class='signinX']"}
+Command duration or timeout: 22.46 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DESKTOP-NM05SVP', ip: '192.168.1.105', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_05'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=37.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 35305fc2-11cb-4cd9-bc29-13cc128f5315
+*** Element info: {Using=xpath, value=//a[@class='signinX']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Exception while extracting object loginLink- Message -> Unable to locate element: {"method":"xpath","selector":"//a[@class='signinX']"}
+Command duration or timeout: 22.46 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DESKTOP-NM05SVP', ip: '192.168.1.105', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_05'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=37.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 35305fc2-11cb-4cd9-bc29-13cc128f5315
+*** Element info: {Using=xpath, value=//a[@class='signinX']}
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.zoho.framework.keywords.GenericKeywords.reportFailure(GenericKeywords.java:91)
+	at com.zoho.framework.keywords.GenericKeywords.getObject(GenericKeywords.java:82)
+	at com.zoho.framework.keywords.GenericKeywords.click(GenericKeywords.java:45)
+	at com.zoho.framework.driver.DriverScript.executeTestCase(DriverScript.java:36)
+	at com.zoho.framework.testcases.LoginTest.doLogin(LoginTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.zoho.framework.testcases.LoginTest@3bfdc050]" name="after" is-config="true" duration-ms="589" started-at="2017-05-22T07:53:06Z" finished-at="2017-05-22T07:53:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.zoho.framework.testcases.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
